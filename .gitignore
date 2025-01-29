@@ -1,2 +1,13 @@
+venv/
+*.env
+*.sqlite3
+__pycache__/
 *.py[cod]
-env/
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+.env
+.DS_Store
+.env/
