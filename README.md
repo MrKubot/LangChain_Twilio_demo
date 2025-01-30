@@ -22,13 +22,11 @@ sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE langchain_db TO langc
 
 **.env**
 
+DB_NAME=langchain_db
 
-DB_NAME=
+DB_USER=langchain_user
 
-DB_USER=
-
-DB_PASSWORD=
-
+DB_PASSWORD=strongpassword
 
 TWILIO_ACCOUNT_SID=
 
@@ -36,9 +34,7 @@ TWILIO_AUTH_TOKEN=
 
 TWILIO_PHONE_NUMBER=
 
-
 OPENAI_API_KEY=
-
 
 SECRET_KEY=
 
