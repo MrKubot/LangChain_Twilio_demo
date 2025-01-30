@@ -8,7 +8,7 @@ class SMSLog(models.Model):
     message = models.TextField()
     status = models.CharField()
     twilio_sid = models.CharField(max_length=34, blank=True)
-    error_message = models.TextField(blank=True)
+    error_message = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
