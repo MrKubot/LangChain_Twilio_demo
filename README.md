@@ -46,3 +46,12 @@ DEBUG=
 **python manage.py createsuperuser**
 
 **python manage.py runserver**
+
+
+**---------- ERRORS? ----------**
+
+sudo apt install python3-dev libpq-dev
+
+pip install psycopg2-binary --force-reinstall
+
+sudo apt install build-essential python3-venv
