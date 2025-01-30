@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wyślij powiadomienie</title>
+</head>
+<body>
+    <h1>Wyślij SMS do pracowników</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Wyślij wiadomości</button>
+    </form>
+</body>
+</html>
