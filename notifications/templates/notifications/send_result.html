@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wysłano powiadomienia</title>
+</head>
+<body>
+    <h1>Wiadomość wysłana do:</h1>
+    <p><strong>Treść:</strong> {{ message }}</p>
+    <p><strong>Wybrane role:</strong> {{ roles|join:", " }}</p>
+    
+    <h2>Odbiorcy ({{ recipients|length }}):</h2>
+    <ul>
+        {% for employee in recipients %}
+        <li>{{ employee.get_role_display }}: {{ employee.full_name }}</li>
+        {% endfor %}
+    </ul>
+    
+    <a href="{% url 'notifications:send_notification' %}">Wyślij kolejną</a>
+</body>
+</html>

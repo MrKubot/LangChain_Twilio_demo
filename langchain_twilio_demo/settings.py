@@ -101,6 +101,8 @@ TWILIO = {
     'PHONE_NUMBER': os.getenv('TWILIO_PHONE_NUMBER')
 }
 
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
