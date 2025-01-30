@@ -1,4 +1,4 @@
-**WSL**
+**---------- WSL ----------**
 
 git clone https://github.com/MrKubot/LangChain_Twilio_demo.git
 
@@ -20,7 +20,7 @@ sudo -u postgres psql -c "ALTER ROLE langchain_user SET client_encoding TO 'utf8
 
 sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE langchain_db TO langchain_user;"
 
-**.env**
+**---------- .env ----------**
 
 DB_NAME=langchain_db
 
