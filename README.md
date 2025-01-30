@@ -1,3 +1,21 @@
+**WSL**
+git clone https://github.com/MrKubot/LangChain_Twilio_demo.git
+
+cd LangChain_Twilio_demo
+
+
+python -m venv env
+
+source env/bin/activate
+
+
+sudo apt update && sudo apt install -y postgresql libpq-dev
+
+
+pip install -r requirements.txt
+
+
+
 **.env**
 
 
