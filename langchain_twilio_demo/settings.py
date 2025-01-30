@@ -24,10 +24,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-g!k$ypfk1%w)95%$pes##w18v-lgadd&+u(p_(!$s*^$rb#-+c'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+if os.getenv('DEBUG') == 'True':
+    DEBUG = True
+else:
+    DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -92,6 +95,12 @@ DATABASES = {
     }
 }
 
+
+TWILIO = {
+    'ACCOUNT_SID': os.getenv('TWILIO_ACCOUNT_SID'),
+    'AUTH_TOKEN': os.getenv('TWILIO_AUTH_TOKEN'),
+    'PHONE_NUMBER': os.getenv('TWILIO_PHONE_NUMBER')
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
