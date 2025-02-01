@@ -1,3 +1,5 @@
+**python3.12**
+
 **---------- WSL ----------**
 
 git clone https://github.com/MrKubot/LangChain_Twilio_demo.git
