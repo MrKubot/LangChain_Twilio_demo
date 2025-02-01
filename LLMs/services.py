@@ -18,7 +18,7 @@ def analyze_message(message: str) -> list:
 
     model = ChatOpenAI(
         api_key=settings.OPENAI_API_KEY,
-        model='gpt-3.5-turbo'
+        model='gpt-4o-mini'
     )
 
     chain = prompt | model
